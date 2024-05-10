@@ -2,12 +2,12 @@
 .post-content {
     box-sizing: border-box;
     padding-left: 8%;
-    padding-right: 16%;
+    padding-right: 8%;
 }
 
 /* 修改页面宽度 */
 .col-lg-8.nopadding-x-md .container.nopadding-x-md #board {
-    width: 120%;
+    width: 110%;
     left: -18%;
 }
 
