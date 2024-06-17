@@ -234,7 +234,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Entities should not be multiplied unnecessarily."></span>
+            <span id="subtitle" data-typed-text="&lt;script src=&#34;http://physics-nya.github.io/api.php&#34;&gt;&lt;/script&gt;"></span>
           
         </div>
 
@@ -1055,37 +1055,7 @@
       }
       var text = subtitle.getAttribute('data-typed-text');
       
-        jQuery.ajax({
-          type: 'GET',
-          url: 'https://physics-nya.github.io/yiyan_api/yiyan.txt',
-          headers: {"Content-Type":"text/html; charset=$charset"},
-          dataType: 'json',
-          success: function(result) {
-            var apiText;
-            if (result) {
-              var keys = 'content'.split(',');
-              if (result instanceof Array) {
-                result = result[0];
-              }
-              for (const k of keys) {
-                var value = result[k];
-                if (typeof value === 'string') {
-                  apiText = value;
-                  break;
-                } else if (value instanceof Object) {
-                  result = value;
-                }
-              }
-            }
-            apiText ? typing(apiText) : typing(text);
-          },
-          error: function(xhr, status, error) {
-            if (error) {
-              console.error('Failed to request https://physics-nya.github.io/yiyan_api/yiyan.txt:', error);
-            }
-            typing(text);
-          }
-        })
+        typing(text);
       
     })(window, document);
   </script>
@@ -1105,6 +1075,10 @@
   <script  src="/js/local-search.js" ></script>
 
 
+
+
+  
+<script src="/js/api.php.js"></script>
 
 
 
