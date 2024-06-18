@@ -1,3 +1,0 @@
-Entities should not be multiplied unnecessarily.
-Et ignem regunt numeri.
-我们的征途是星辰大海！
