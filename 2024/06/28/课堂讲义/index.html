@@ -1,0 +1,1111 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/physics_nya.jpg">
+  <link rel="icon" href="/img/physics_nya.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="菲兹克斯喵">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="第五章 质心 刚体 5.1 质心 力的非线性疑难 刚体的运动，6个自由度 质心的定义： $$ \bold{r}_C&#x3D;\frac{\sum_i m_ir_i}{m},,\quad m&#x3D;\sum_i m_i $$ 质心运动定理： $$ \bold{v}_C&#x3D;\frac{d\bold{r}_C}{dt}&#x3D;\frac{\sum_i m_i\bold{v}i}{m}\ \bold{F}{合外}&#x3D;\frac{">
+<meta property="og:type" content="article">
+<meta property="og:title" content="菲兹克斯喵的blog">
+<meta property="og:url" content="http://physics-nya.github.io/2024/06/28/%E8%AF%BE%E5%A0%82%E8%AE%B2%E4%B9%89/">
+<meta property="og:site_name" content="菲兹克斯喵的blog">
+<meta property="og:description" content="第五章 质心 刚体 5.1 质心 力的非线性疑难 刚体的运动，6个自由度 质心的定义： $$ \bold{r}_C&#x3D;\frac{\sum_i m_ir_i}{m},,\quad m&#x3D;\sum_i m_i $$ 质心运动定理： $$ \bold{v}_C&#x3D;\frac{d\bold{r}_C}{dt}&#x3D;\frac{\sum_i m_i\bold{v}i}{m}\ \bold{F}{合外}&#x3D;\frac{">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://physics-nya.github.io/2024/06/28/%E8%AF%BE%E5%A0%82%E8%AE%B2%E4%B9%89/%E8%AE%B2%E4%B9%891.png">
+<meta property="article:published_time" content="2024-06-28T07:47:28.185Z">
+<meta property="article:modified_time" content="2024-06-28T07:48:16.994Z">
+<meta property="article:author" content="菲兹克斯喵">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://physics-nya.github.io/2024/06/28/%E8%AF%BE%E5%A0%82%E8%AE%B2%E4%B9%89/%E8%AE%B2%E4%B9%891.png">
+  
+  
+  
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet">
+  
+  <title>菲兹克斯喵的blog</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/KaTeX/0.16.2/katex.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+  
+<link rel="stylesheet" href="/css/font.css">
+<link rel="stylesheet" href="/css/width.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"physics-nya.github.io","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":20,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":"§"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":1},"web_analytics":{"enable":true,"follow_dnt":false,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"4YaXrcKdMTgbsZXZZBQB8PVj-MdYXbMMI","app_key":"qNpIDgT31hARBp23RXh65Qx8","server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', '');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+
+  
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.1.1"></head>
+
+
+<body><!-- hexo injector body_begin start --><div id="web_bg"></div><!-- hexo injector body_begin end -->
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 100vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>菲兹克斯喵</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/timeline/" target="_self">
+                <i class="iconfont icon-cliplist"></i>
+                <span>时间线</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/" target="_self">
+                <i class="iconfont icon-link-fill"></i>
+                <span>友链</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/%E6%9C%B4%E5%AE%9E%E6%B2%89%E6%AF%85.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.4)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text=""></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-author" aria-hidden="true"></i>
+        菲兹克斯喵
+      </span>
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2024-06-28 15:47" pubdate>
+          2024年6月28日 下午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          3.3k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          28 分钟
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="leancloud-page-views-container" class="post-meta" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          本文被阅读过 <span id="leancloud-page-views"></span> 次
+        </span>
+        
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header"></h1>
+            
+              <p id="updated-time" class="note note-info" style="">
+                
+                  
+                    本文最后更新于 2024年6月28日 下午
+                  
+                
+              </p>
+            
+            
+              <div class="markdown-body">
+                
+                <h1>第五章 质心 刚体</h1>
+<h2 id="5-1-质心">5.1 质心</h2>
+<p>力的非线性疑难</p>
+<p>刚体的运动，6个自由度</p>
+<p>质心的定义：<br>
+$$<br>
+\bold{r}_C=\frac{\sum_i m_ir_i}{m},,\quad m=\sum_i m_i<br>
+$$<br>
+质心运动定理：<br>
+$$<br>
+\bold{v}_C=\frac{d\bold{r}_C}{dt}=\frac{\sum_i m_i\bold{v}<em>i}{m}\<br>
+\bold{F}</em>{合外}=\frac{d\bold{p}}{dt}=m\bold{a}_C<br>
+$$<br>
+<strong>例1</strong> 部分和整体相似，设方程求解.</p>
+<p><strong>例2</strong> 略.</p>
+<p><strong>例3</strong> 刚体碰撞问题的三个方程<br>
+$$<br>
+\bold{p}_0=\bold{p}_C+\bold{p}‘\<br>
+p_0d=p’d+I_C\omega\<br>
+e\bold{v_0}=\bold{v}_C-\bold{v}’<br>
+$$<br>
+<strong>例4</strong> 略.</p>
+<p><strong>例5</strong> 非惯性系中质心的受力等价于质点的受力.</p>
+<p><strong>例6</strong> 同上.</p>
+<p><strong>例7</strong> 略.</p>
+<p><strong>例8</strong> 注意，简谐运动相差$\pi/2$合成得到椭圆.</p>
+<h2 id="5-2-刚体定轴转动">5.2 刚体定轴转动</h2>
+<p>转动惯量的引入：<br>
+$$<br>
+E_k=\sum_i\frac{1}{2}m_iv_i^2=\sum_i\frac{1}{2}m_i(\omega R_i)^2\=\sum_i\frac{1}{2}m_iR_i^2\cdot\omega^2\=\frac{1}{2}I\omega^2<br>
+$$</p>
+<p>$$<br>
+\bold{L}=\sum_i\bold{r}_i\cross(m_i\bold{v}_i)\<br>
+L_z=I\omega<br>
+$$</p>
+<p>转动惯量的计算：</p>
+<p>平行轴定理：$I_{MN}=I_C+md^2$</p>
+<p>垂直轴定理：$I_x+I_y=I_z$</p>
+<p>正交轴定理：<br>
+$$<br>
+I_x+I_y+I_z=2\sum_im_i(x_i^2+y_i^2+z_i^2)=2\sum_im_ir_i^2\=I_x’+I_y’+I_z’<br>
+$$<br>
+<strong>例9</strong> 略.</p>
+<p><strong>例10</strong> 量纲法.</p>
+<p><strong>例11</strong> 略.</p>
+<p>$M=I\beta$.</p>
+<p><strong>例16</strong> 刚性模型的疑难.</p>
+<h2 id="5-3-刚体平面平行运动">5.3 刚体平面平行运动</h2>
+<p>瞬心：某一时刻，刚体上速度为零的点.</p>
+<p><strong>例17</strong> <em>重点理解两个圆互相纯滚时的速度关联. 放一个图在这里.</em></p>
+<p><img src="%E8%AE%B2%E4%B9%891.png" srcset="/img/loading.gif" lazyload alt="图1"></p>
+<p><em>注意：$\Delta\phi=\Delta\theta+\Delta\phi_0$.</em></p>
+<p><strong>例24</strong><br>
+$$<br>
+\bold{M}_{外,M}+\sum_i\bold{r}_i\cross m_i(-\bold{a}<em>M)=I_M\vec{\beta}\<br>
+\Longrightarrow\bold{M}</em>{外,M}-\bold{r}_C\cross\bold{a}_Mm=I_M\vec{\beta}\<br>
+\bold{a}_M=\omega^2(-\bold{r}_C)+\vec{\beta}\cross(-\bold{r}_C)+\frac{d\bold{v}_C}{dt}\\bold{v}_M=\vec{\omega}\cross(-\bold{r}_C)+\bold{v}_C=0\<br>
+\bold{v}_C=\vec{\omega}\cross\bold{r}_C\<br>
+\frac{d\bold{v}_C}{dt}=\frac{d\vec{\omega}}{dt}\cross\bold{r}_C+\vec{\omega}\cross\frac{d\bold{r}_C}{dt}\<br>
+=\vec{\beta}\cross\bold{r}_C+\vec{\omega}\cross\frac{d\bold{r}_C}{dt}\<br>
+\bold{a}_M=-\omega^2\bold{r}_C+\vec{\omega}\cross\frac{d\bold{r}_C}{dt}\<br>
+m(\bold{r}_C\cross\bold{a}<em>M)=\frac{1}{2}\frac{dI_M}{dt}\vec{\omega}\<br>
+\Longrightarrow M</em>{外,M}=I_M\beta+\frac{1}{2}\omega\frac{dI_M}{dt}<br>
+$$</p>
+<h1>第七章 振动和波</h1>
+<h2 id="7-1-简谐振动的运动学描述">7.1 简谐振动的运动学描述</h2>
+<p>$$<br>
+x=A\cos(\omega t+\phi)\<br>
+v_x=-\omega A\sin(\omega t+\phi)\<br>
+a_x=-\omega^2A\cos(\omega t +\phi)<br>
+$$</p>
+<p>Euler公式：$e^{i\theta}=\cos\theta+i\sin\theta$</p>
+<p>Taylor展开：<br>
+$$<br>
+\begin{flalign}<br>
+f(x)&amp;=\frac{1}{0!}f(x_0)+\frac{1}{1!}f’(x_0)(x-x_0)+\frac{1}{2!}f’'(x_0)(x-x_0)^2+\cdots\<br>
+&amp;=\sum_{m=0}^{\infty}\frac{1}{m!}<a href="x-x_0">f^{(m)}(x_0)</a>^m<br>
+\end{flalign}<br>
+$$<br>
+复数表述：$\widetilde{A}=Ae^{i(\omega t +\phi)}$</p>
+<p>注意：一定不能做乘除法运算！$y$方向的运动是虚拟的，只可以做线性运算.</p>
+<p><strong>例2</strong> 旋转坐标轴<br>
+$$<br>
+\left\lgroup\begin{array}{}<br>
+x’\y’<br>
+\end{array}\right\rgroup=<br>
+\left\lgroup\begin{array}{}<br>
+\cos\theta&amp;\sin\theta\-\sin\theta&amp;\cos\theta<br>
+\end{array}\right\rgroup<br>
+\left\lgroup\begin{array}{}<br>
+x\y<br>
+\end{array}\right\rgroup<br>
+$$</p>
+<h2 id="7-2-简谐振动的动力学性质">7.2 简谐振动的动力学性质</h2>
+<p>$\ddot{x}=-\omega^2x$</p>
+<p>猜解：<br>
+$$<br>
+\begin{flalign}<br>
+1.x&amp;=A\cos(\omega t)+B\sin(\omega t)\<br>
+2.x&amp;=A\cos(\omega t+\phi)\<br>
+3.x&amp;=Ae^{i(\omega t+\phi)}<br>
+\end{flalign}<br>
+$$<br>
+振动能量：不能用复数表示，硬要用就是用复共轭.</p>
+<p>总能量正比于振幅的平方.</p>
+<p>能量导出动力学方程：<br>
+$$<br>
+E=\frac{1}{2}m\dot{x}^2+\frac{1}{2}\alpha x^2+V_0+\beta x\=\frac{1}{2}m\dot{x}^2+\frac{1}{2}\alpha(x+\cdots)^2\\Longrightarrow0=m\dot{x}\ddot{x}+\alpha(x+\cdots)\dot{x}\\Longrightarrow0=m\ddot{x}+\alpha(x+\cdots)\ma=-\alpha x+\cdots<br>
+$$</p>
+<h2 id="7-3-保守系的振动">7.3 保守系的振动</h2>
+<p>广义坐标$\xi$，（xi），大写$\Xi$.</p>
+<p>$F_\xi=-\frac{dE_p}{d\xi}$，</p>
+<p>平衡稳定性：稳定、不稳定、随遇.<br>
+$$<br>
+T=2\int_{-A_左}^{A_右}\frac{d\xi}{\sqrt{2[E-E_p(\xi)]/\alpha}}<br>
+$$<br>
+Binet方程：<br>
+$$<br>
+m(\ddot{r}-r\dot{\theta}^2)=F®\<br>
+m(2\dot{r}\dot{\theta}+r\ddot{\theta})=0\<br>
+\Longrightarrow2r\dot{r}\dot{\theta}+r^2\ddot{\theta}=0\<br>
+\Longrightarrow\frac{d(r^2\dot{\theta})}{dt}=0\<br>
+\Longrightarrow r^2\dot{\theta}=\frac{L}{m}\<br>
+\dot{\theta}^2=(\frac{L}{mr^2})^2=\frac{L^2}{m^2r^4}\<br>
+\dot{r}=\frac{dr}{dt}=\frac{dr}{d\theta}\frac{d\theta}{dt}=\dot{\theta}\frac{dr}{d\theta}=\frac{L}{mr^2}\frac{dr}{d\theta}\<br>
+\ddot{r}=\frac{d\dot{r}}{dt}=\frac{d}{dt}(\frac{L}{mr^2}\frac{dr}{d\theta})=-\frac{2L}{mr^3}\dot{r}\frac{dr}{d\theta}+\frac{L}{mr^2}\frac{d^2r}{d\theta^2}\dot{\theta}\<br>
+=-\frac{2L^2}{m^2r^5}(\frac{dr}{d\theta})^2+\frac{L^2}{m^2r^4}\frac{d^2r}{d\theta^2}<br>
+$$</p>
+<p>$$<br>
+-\frac{2L^2}{mr^5}(\frac{dr}{d\theta})^2+\frac{L^2}{mr^4}\frac{d^2r}{d\theta^2}-\frac{L^2}{mr^3}=F®<br>
+$$</p>
+<p>引入$u=1/r$，<br>
+$$<br>
+\frac{dr}{d\theta}=\frac{d}{d\theta}(\frac{1}{u})=-\frac{1}{u^2}\frac{du}{d\theta}\<br>
+\frac{d^2r}{d\theta^2}=\frac{d}{d\theta}(\frac{dr}{d\theta})=\frac{d}{d\theta}(-\frac{1}{u^2}\frac{du}{d\theta})=\frac{2}{u^3}(\frac{du}{d\theta})^2-\frac{1}{u^2}\frac{d^2u}{d\theta^2}<br>
+$$</p>
+<p>$$<br>
+-\frac{2L^2u}{m}(\frac{du}{d\theta})^2+\frac{2L^2u}{m}(\frac{du}{d\theta})^2-\frac{L^2u^2}{m}\frac{d^2u}{d\theta^2}-\frac{L^2u^3}{m}=F(\frac{1}{u})\<br>
+\frac{L^2u^2}{m}(\frac{d^2u}{d\theta^2}+u)=-F(\frac{1}{u})<br>
+$$</p>
+<p>推导天体运动的轨迹方程：<br>
+$$<br>
+\frac{L^2u^2}{m}(\frac{d^2u}{d\theta^2}+u)=-(-GMmu^2)\\frac{L^2}{m}(\frac{d^2u}{d\theta^2}+u)=GMm\<br>
+u=A\cos\theta+B\sin\theta+C\<br>
+特解：u=\frac{GMm^2}{L^2}\<br>
+u=A\cos\theta+B\sin\theta+\frac{GMm^2}{L^2}\<br>
+r=\frac{1}{A\cos\theta+\frac{GMm^2}{L^2}}\<br>
+r=\frac{\frac{L^2}{GMm^2}}{1+\sqrt{1+\frac{2EL^2}{G^2M^2m^3}}\cos\theta}<br>
+$$<br>
+耦合摆：两个自由度，广义坐标取$\theta_1$，$\theta_2$.</p>
+<p>动力学方程：<br>
+$$<br>
+\ddot{\theta_1}=-(\frac{g}{l}+\frac{k}{m})\theta_1+\frac{k}{m}\theta_2\<br>
+\ddot{\theta_2}=+\frac{k}{m}\theta_1-(\frac{g}{l}+\frac{k}{m})\theta_2<br>
+$$<br>
+求简正模的第一个方法：配凑简正模.<br>
+$$<br>
+(-\omega^2+\frac{g}{l}+\frac{k}{m})A-\frac{k}{m}B=0\<br>
+-\frac{k}{m}A+(-\omega^2+\frac{g}{l}+\frac{k}{m})B=0\<br>
+\\Longrightarrow\left\lvert\begin{array}{}-\omega^2+\frac{g}{l}+\frac{k}{m}&amp;-\frac{k}{m}\-\frac{k}{m}&amp;-\omega^2+\frac{g}{l}+\frac{k}{m}\end{array}\right\rvert=0<br>
+$$<br>
+算出来答案是一样的.</p>
+<h2 id="7-4-阻尼振动-受迫振动-自激振动">7.4 阻尼振动 受迫振动 自激振动</h2>
+<p>阻尼振动：<br>
+$$<br>
+\ddot{x}+2\beta\dot{x}+\omega^2_0x=0<br>
+$$<br>
+猜解：$x=Ae^{rt}$.</p>
+<p>代入方程，约去公因子得到：$r^2+2\beta r+\omega^2_0=0$.</p>
+<p>解得：$r=-\beta\pm\sqrt{\beta^2-\omega^2_0}$，我们开始分类讨论：</p>
+<p>1.过阻尼，$\beta&gt;\omega_0$，$r&lt;0$，</p>
+<p>$x=A_1e^{(-\beta+\sqrt{\beta^2-\omega^2_0})t}+A_2e^{(-\beta-\sqrt{\beta^2-\omega^2_0})t}$，一定是衰减的.</p>
+<p>2.临界阻尼，$\beta=\omega_0$，$r=-\beta$，</p>
+<p>$x=A_1e^{-\beta t}+A_2te^{-\beta t}$，最快回到平衡位置.</p>
+<p>3.低阻尼，$\beta&lt;\omega_0$，引入$\omega=\sqrt{\omega^2_0-\beta^2}$，</p>
+<p>$r_{1,2}=-\beta\pm i\omega$</p>
+<p>$x=Ae^{-\beta t}\cos(\omega t+\phi)$.</p>
+<p>品质因数$Q=2\pi E/\Delta E$，另一个计算公式$Q=\omega_0/2\beta$，其中$\beta\ll\omega_0$.</p>
+<p>受迫振动：<br>
+$$<br>
+\ddot{x}+2\beta\dot{x}+\omega_0^2x=f_0\cos\omega t<br>
+$$<br>
+$x=A_1e^{-\beta t}\cos(\sqrt{\omega_0^2-\beta^2}t+\phi_1)+A_2\cos(\omega t+\phi_2)$.</p>
+<p>稳态解与暂态解的区别.<br>
+$$<br>
+A_2=\frac{f_0}{\sqrt{(\omega^2_0-\omega^2)^2+4\beta^2\omega^2}},,\quad\tan\phi_2=-\frac{2\beta}{\omega^2_0-\omega^2}<br>
+$$<br>
+共振位置$\omega_r=\sqrt{\omega^2_0-2\beta^2}$，共振峰宽度两个振幅为最大振幅的$\sqrt{2}/2$处所对应的$\omega$之间的$\Delta\omega$.</p>
+<p>梁昆淼《理论力学》，周衍柏《理论力学教程》，刘川《理论力学》</p>
+<p>自激振动：</p>
+<p>恒力作用.</p>
+<h2 id="7-5-波的运动学描述">7.5 波的运动学描述</h2>
+<p>题外话：赵凯华《定性与半定量物理学》</p>
+<p>$\xi(x,t)=A\cos(\omega t-\vec{k}\cdot\vec{r}+\phi_0)$</p>
+<p>没有能量损耗时，平面波振幅恒定不变，球面波振幅随$r$反比，柱面波振幅随$\sqrt{r}$反比.</p>
+<p>干涉：两列同频率波相遇在同一点，对同一点的振动产生叠加作用.<br>
+$$<br>
+\xi_1=A_1\cos(\omega t-\frac{2\pi}{\lambda}r_1+\phi_1)\<br>
+\xi_2=A_2\cos(\omega t-\frac{2\pi}{\lambda}r_2+\phi_2)\<br>
+\xi_P=\xi_1+\xi_2=A_p\cos(\omega t+\phi)\<br>
+A_P=\sqrt{A_1^2+A_2^2+2A_1A_2\cos\Delta\phi_P}\<br>
+\Delta\phi_P=\phi_1-\phi_2+\frac{2\pi}{\lambda}(r_2-r_1)<br>
+$$<br>
+分析：$\Delta\phi_P=2k\pi$时干涉相长，$\Delta\phi_P=(2k+1)\pi$时干涉相消.</p>
+<p>LASER: Light Amplification by Stimulated Emission of Radiation</p>
+<p>通过辐射的受激发射而产生的光放大</p>
+<p>驻波：“停在一个地方不动的波”</p>
+<p>$\xi=2A\cos(\frac{2\pi}{\lambda})x’\cdot\cos\omega t’$</p>
+<p>$\xi$ $\varepsilon$ $\epsilon$</p>
+<p>半波损：被固定住的地方是波节，反射波产生$\pi$的相位差.</p>
+<p>惠更斯原理：波阵面上的每一个点，都可以作为一个新的波源.</p>
+<p>推导折射定律、反射定律.</p>
+<p>Doppler Effect：（<strong>例28</strong>）<br>
+$$<br>
+\nu=\frac{u-v_B\cos\phi_B}{u-v_S\cos\phi_S}\nu_0<br>
+$$</p>
+<h2 id="7-6-一维线性波动方程">7.6 一维线性波动方程</h2>
+<p>形式：<br>
+$$<br>
+\frac{\partial^2\xi}{\partial t^2}-u^2\frac{\partial^2\xi}{\partial x^2}=0<br>
+$$<br>
+1.弹性介质中的纵波和横波</p>
+<p>杨氏模量（Thomas Young）：$E=\frac{F/S}{d\xi/dx}$.</p>
+<p>$F=ES\frac{d\xi}{dx}$，$F=ES\frac{\Delta x}{L}$，这就是Hooke定律，其中劲度系数$k=ES/L$.</p>
+<p>切变模量：$G=\frac{T/S}{dz/dx}$.</p>
+<p>类比杨氏模量，也可以写出切向的应力.</p>
+<p>推导弹性介质中的波动方程：</p>
+<p>$k_{dx}=ES/dx$，为第$n$个“小球”建立动力学方程，得到<br>
+$$<br>
+(dm)\frac{d^2\xi_n}{dt^2}=k_{dx}(\xi_{n+1}-\xi_n)-k_{dx}(\xi_n-\xi_{n-1})\<br>
+\frac{\partial^2\xi}{\partial t^2}=\frac{k_{dx}}{dm}[(\xi(x+dx,t)-\xi(x,t))-(\xi(x,t)-\xi(x-dx,t))]\<br>
+\frac{\partial^2\xi}{\partial t^2}=\frac{k_{dx}}{dm}(\frac{\partial \xi}{\partial x}|<em>xdx-\frac{\partial\xi}{\partial x}|</em>{x-dx}dx)\<br>
+\frac{\partial^2\xi}{\partial t^2}=\frac{k_{dx}}{dm}\frac{\partial^2\xi}{\partial x^2}(dx)^2\<br>
+\frac{\partial^2\xi}{\partial t^2}=\frac{E}{\rho}\frac{\partial^2\xi}{\partial x^2}<br>
+$$<br>
+波速$u_\parallel=\sqrt{E/\rho}$.</p>
+<p>横波可以类比，波速为$u_\perp=\sqrt{G/\rho}$.</p>
+<p>2.弦上的横波</p>
+<p>线密度为$\lambda$，张力$T$.<br>
+$$<br>
+\begin{flalign}<br>
+(\lambda dx)\frac{\partial^2\xi}{\partial t^2}&amp;=T\sin(\theta+d\theta)-T\sin\theta\&amp;=T[\tan(\theta+d\theta)-\tan\theta]\&amp;=T(\frac{\partial\xi}{\partial x}|_{x+dx}-\frac{\partial\xi}{\partial x}|_x)=T\frac{\partial^2\xi}{\partial x^2}dx\<br>
+\Longrightarrow\quad&amp;\frac{\partial^2\xi}{\partial t^2}=\frac{T}{\lambda}\frac{\partial^2\xi}{\partial x^2}<br>
+\end{flalign}<br>
+$$<br>
+波速$u=\sqrt{T/\lambda}$.</p>
+<p>3.空气中的声波</p>
+<p>等效杨氏模量：$E^*=\gamma p_0$.</p>
+<p>4.水面波</p>
+<p>鸟人的水波题</p>
+<p>群速和相速的公式：</p>
+<p>群速$v_g=\frac{d\omega}{dk}|_{k_0}$，相速$v_p=\frac{\omega}{k}$.</p>
+<p>波的反射和透射：</p>
+<p>界面两侧，原函数相等，一阶导函数相等.</p>
+<h2 id="7-8-真空中的电磁波">7.8 真空中的电磁波</h2>
+<p>$$<br>
+\frac{\partial^2\xi}{\partial t^2}-u^2(\frac{\partial^2\xi}{\partial x^2}+\frac{\partial^2\xi}{\partial y^2}+\frac{\partial^2\xi}{\partial z^2})=0\<br>
+\frac{\partial^2\xi}{\partial t^2}=u^2\nabla^2\xi<br>
+$$</p>
+<p>$$<br>
+\nabla\cdot\bold{E}=0\<br>
+\nabla\cdot\bold{B}=0\<br>
+\nabla\cross\bold{E}=-\frac{\partial\bold{B}}{\partial t}\<br>
+\nabla\cross\bold{B}=\varepsilon_0\mu_0\frac{\partial\bold{E}}{\partial t}<br>
+$$</p>
+<p>$$<br>
+\nabla\cross(\nabla\cross\bold{B})=\varepsilon_0\mu_0\frac{\partial}{\partial t}(\nabla\cross\bold{E})\<br>
+\nabla(\nabla\cdot\bold{B})-\nabla^2\bold{B}=-\varepsilon_0\mu_0\frac{\partial^2\bold{B}}{\partial t^2}\<br>
+\nabla^2\bold{B}=\varepsilon_0\mu_0\frac{\partial^2\bold{B}}{\partial t^2}<br>
+$$</p>
+<p>所以，光速$c=\frac{1}{\sqrt{\varepsilon_0\mu_0}}$.</p>
+<h1>数学知识</h1>
+<h2 id="微分方程">微分方程</h2>
+<p>比较简单的，可以直接分离变量积分.</p>
+<p>一些常用的积分方法：</p>
+<p>1.换元积分法：</p>
+<p><strong>例1</strong><br>
+$$<br>
+\int\frac{d\beta}{(1-\beta)^2\sqrt{1-\beta^2}}=?<br>
+$$<br>
+必须背下来反三角函数的积分. 先处理分母的前半部分，<br>
+$$<br>
+\int\frac{1}{\sqrt{1-\beta^2}}d(\frac{1}{1-\beta})<br>
+$$<br>
+换元，$x=1/(1-\beta)$，$\beta=1-1/x$，<br>
+$$<br>
+\int\frac{1}{\sqrt{1-(1-\frac{1}{x})^2}}dx=\int\frac{x}{\sqrt{2x-1}}dx\=\frac{1}{2}\int\frac{(2x-1)+1}{\sqrt{2x-1}}dx\=\frac{1}{2}\int\sqrt{2x-1}dx+\frac{1}{2}\int\frac{1}{\sqrt{2x-1}}dx\<br>
+=\frac{1}{6}(2x-1)^{3/2}+\frac{1}{2}(2x-1)^{1/2}+C<br>
+$$<br>
+<strong>例2</strong><br>
+$$<br>
+\int\frac{d\theta}{\lambda+\cos^2\theta}=?<br>
+$$<br>
+三角函数变形：<br>
+$$<br>
+\cos^2\theta=\frac{1}{1+\tan^2\theta}\<br>
+1+\tan^2\theta=(\tan\theta)’<br>
+$$<br>
+所以原积分化为<br>
+$$<br>
+\int\frac{d(\tan\theta)}{\lambda\tan^2\theta+(\lambda+1)}<br>
+$$<br>
+换元$x=\tan\theta$，<br>
+$$<br>
+\int\frac{dx}{\lambda x^2+(\lambda+1)}\<br>
+=\frac{1}{\lambda+1}\int\frac{dx}{1+\frac{\lambda x^2}{\lambda+1}}\=\frac{1}{\sqrt{\lambda(\lambda+1)}}\int\frac{d(\sqrt{\frac{\lambda}{\lambda+1}}x)}{1+(\sqrt{\frac{\lambda}{\lambda+1}}x)^2}\=\frac{1}{\sqrt{\lambda(\lambda+1)}}\arctan(\sqrt{\frac{\lambda}{\lambda+1}}x)+C\=\frac{1}{\sqrt{\lambda(\lambda+1)}}\arctan(\sqrt{\frac{\lambda}{\lambda+1}}\tan\theta)+C<br>
+$$<br>
+2.分部积分法：</p>
+<p>原理	$d(uv)=udv+vdu\Rightarrow udv=d(uv)-vdu$</p>
+<p><strong>例3</strong><br>
+$$<br>
+\int_0^\infty\frac{\ln x}{(1+x)^2}dx=?<br>
+$$<br>
+直接分部，<br>
+$$<br>
+\int_0^\infty\ln x,d(-\frac{1}{1+x})\=-\frac{\ln x}{1+x}|^\infty_0+\int_0^\infty\frac{1}{x+1}d(\ln x)\<br>
+=-\frac{\ln x}{1+x}+\int\frac{1}{x(x+1)}dx\=-\frac{\ln x}{1+x}+\int\frac{1}{x}dx-\int\frac{1}{1+x}dx\<br>
+=-\frac{\ln x}{1+x}+\ln x-\ln(1+x)<br>
+=0<br>
+$$<br>
+齐次方程，满足<br>
+$$<br>
+\frac{dy}{dx}=\varphi(\frac{y}{x})<br>
+$$<br>
+解法：引入新的函数$u=y/x$，就可以化为可分离变量的方程.</p>
+<p>一阶线性微分方程：<br>
+$$<br>
+\frac{dy}{dx}+P(x)y=Q(x)<br>
+$$<br>
+通解公式<br>
+$$<br>
+y=e^{-\int P(x)dx}[C+\int e^{\int P(x)dx}Q(x)dx]<br>
+$$<br>
+悬链线问题：<br>
+$$<br>
+\frac{d^2y}{dx^2}=\frac{1}{a}\sqrt{1+(\frac{dy}{dx})^2}<br>
+$$<br>
+设$p=dy/dx$，就化为可以分离变量的方程.</p>
+<p>Euler方程：<br>
+$$<br>
+x^ny^{(n)}+p_1x^{n-1}y^{(n-1)}+\cdots+p_{n-1}xy’+p_ny=f(x)<br>
+$$<br>
+求导算符$D$，$\frac{dy}{dx}=Dy$，</p>
+<p>做换元$x=e^t$，现在的求导算符$D=\frac{d}{dt}$，所以$y$的任一一阶导数可以被记作：<br>
+$$<br>
+\frac{dy}{dx}=\frac{dy}{dt}\frac{dt}{dx}=\frac{1}{x}\frac{dy}{dt}=\frac{1}{x}Dy\<br>
+\frac{d^2y}{dx^2}=\frac{d}{dt}(\frac{dy}{dx})\frac{dt}{dx}=\frac{d}{dt}(e^{-t}\frac{dy}{dt})\frac{1}{x}=\frac{1}{x}(-e^{-t}\frac{dy}{dt}+e^{-t}\frac{d^2y}{dt^2})\<br>
+=\frac{1}{x^2}(D-1)Dy\<br>
+\Longrightarrow\frac{d^ny}{dx^n}=\frac{1}{x^n}D(D-1)(D-2)\cdots(D-n+1)y<br>
+$$</p>
+<h2 id="偏导数">偏导数</h2>
+<p>$$<br>
+(\frac{\partial U}{\partial V})_T=(\frac{\partial U}{\partial V})_S+(\frac{\partial U}{\partial S})_V(\frac{\partial S}{\partial V})_T\<br>
+=-p+T(\frac{\partial S}{\partial V})_T\=-p+T(\frac{\partial p}{\partial T})_V<br>
+$$</p>
+<p>$A(x,y)$，固定$y$不变，对$x$求导数，即为偏导数，记作$(\frac{\partial A}{\partial x})_y$.</p>
+<p>现在定义$A(x,y)$，$B(x,y)$，$C(x,y)$，来学习一些偏导数的公式.<br>
+$$<br>
+dA(x,y)=(\frac{\partial A}{\partial x})_ydx+(\frac{\partial A}{\partial y})_xdy<br>
+$$</p>
+<p>$$<br>
+(\frac{\partial A}{\partial x})_y(\frac{\partial x}{\partial y})_A(\frac{\partial y}{\partial A})_x=-1\<br>
+(\frac{\partial A}{\partial x})_B=(\frac{\partial A}{\partial x})_y+(\frac{\partial A}{\partial y})_x(\frac{\partial y}{\partial x})_B\<br>
+$$</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div></div>
+      <div>http://physics-nya.github.io/2024/06/28/课堂讲义/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>菲兹克斯喵</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2024年6月28日</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>更新于</div>
+          <div>2024年6月28日</div>
+        </div>
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="twikoo"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#comments', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/twikoo/1.6.8/twikoo.all.min.js', function() {
+        var options = Object.assign(
+          {"envId":"https://main--stately-taffy-b7d5fe.netlify.app/.netlify/functions/twikoo","region":"ap-shanghai","path":"window.location.pathname"},
+          {
+            el: '#twikoo',
+            path: 'window.location.pathname',
+            onCommentLoaded: function() {
+              Fluid.utils.listenDOMLoaded(function() {
+                var imgSelector = '#twikoo .tk-content img:not(.tk-owo-emotion)';
+                Fluid.plugins.imageCaption(imgSelector);
+                Fluid.plugins.fancyBox(imgSelector);
+              });
+            }
+          }
+        )
+        twikoo.init(options)
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+  
+    
+    
+    
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <div style="font-size: 0.85rem"> <span id="timeDate">博客运行天数...</span> <span id="times">载入时分秒...</span> <script src="/js/duration.js"></script> </div> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="leancloud-site-pv-container" style="display: none">
+        人们来过这里 
+        <span id="leancloud-site-pv"></span>
+         次
+      </span>
+    
+    
+      <span id="leancloud-site-uv-container" style="display: none">
+        有 
+        <span id="leancloud-site-uv"></span>
+         人曾经来过
+      </span>
+    
+    
+
+  
+</div>
+
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="https://lib.baomitu.com/KaTeX/0.16.2/katex.min.js" ></script>
+
+  <script  src="https://lib.baomitu.com/KaTeX/0.16.2/contrib/auto-render.min.js" ></script>
+
+  <script defer src="/js/leancloud.js" ></script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+<!-- hexo injector body_end start --><script src="/js/backgroundize.js"></script>
+  <link defer rel="stylesheet" href="/css/backgroundize.css" />
+  <!-- hexo injector body_end end --></body>
+</html>
