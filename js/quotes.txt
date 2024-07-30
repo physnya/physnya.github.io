@@ -1,2 +1,0 @@
-Eclipse first, the rest nowhere.
-Entities should not be multiplied unnecessarily.
