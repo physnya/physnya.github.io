@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>菲兹克斯喵的blog</title>
+  <icon>http://physics-nya.github.io/icon.png</icon>
+  <subtitle>Nyaa~</subtitle>
+  <link href="http://physics-nya.github.io/atom.xml" rel="self"/>
+  
+  <link href="http://physics-nya.github.io/"/>
+  <updated>2024-07-20T00:36:04.911Z</updated>
+  <id>http://physics-nya.github.io/</id>
+  
+  <author>
+    <name>菲兹克斯喵</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于⌈计划⌋的讲座</title>
+    <link href="http://physics-nya.github.io/2024/07/16/%E2%8C%88%E8%AE%A1%E5%88%92%E2%8C%8B%E8%AE%B2%E5%BA%A7/"/>
+    <id>http://physics-nya.github.io/2024/07/16/%E2%8C%88%E8%AE%A1%E5%88%92%E2%8C%8B%E8%AE%B2%E5%BA%A7/</id>
+    <published>2024-07-16T06:28:19.000Z</published>
+    <updated>2024-07-20T00:36:04.911Z</updated>
+    
+    
+    <summary type="html">暑假在某竞赛机构打工改试卷时，应邀做的一场小小的讲座。其实大多数讲座内容是在临场自由发挥，所以实际上这篇讲稿是类似于提纲或者草稿的形式。本文已加密。</summary>
+    
+    
+    
+    <category term="Work" scheme="http://physics-nya.github.io/categories/Work/"/>
+    
+    
+    <category term="Physics" scheme="http://physics-nya.github.io/tags/Physics/"/>
+    
+    <category term="work" scheme="http://physics-nya.github.io/tags/work/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在科技楼的角落</title>
+    <link href="http://physics-nya.github.io/2024/07/11/%E5%9C%A8%E7%A7%91%E6%8A%80%E6%A5%BC%E7%9A%84%E8%A7%92%E8%90%BD%E2%80%94%E2%80%94%E8%AE%B0%E4%B8%80%E4%BA%9B%E7%AB%9E%E8%B5%9B%E5%9B%9E%E5%BF%86/"/>
+    <id>http://physics-nya.github.io/2024/07/11/%E5%9C%A8%E7%A7%91%E6%8A%80%E6%A5%BC%E7%9A%84%E8%A7%92%E8%90%BD%E2%80%94%E2%80%94%E8%AE%B0%E4%B8%80%E4%BA%9B%E7%AB%9E%E8%B5%9B%E5%9B%9E%E5%BF%86/</id>
+    <published>2024-07-11T14:55:37.000Z</published>
+    <updated>2024-07-20T00:30:46.335Z</updated>
+    
+    
+    <summary type="html">这是我写给高中母校的一些文字，投稿给一本由毕业生写作和编辑、写给下一届的同学们的书的编辑部。本文已加密。</summary>
+    
+    
+    
+    <category term="life" scheme="http://physics-nya.github.io/categories/life/"/>
+    
+    
+    <category term="Life" scheme="http://physics-nya.github.io/tags/Life/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计算专题3 凸透镜的二阶像散</title>
+    <link href="http://physics-nya.github.io/2024/07/09/%E8%AE%A1%E7%AE%97%E4%B8%93%E9%A2%983%20%E5%87%B8%E9%80%8F%E9%95%9C%E7%9A%84%E4%BA%8C%E9%98%B6%E5%83%8F%E6%95%A3/"/>
+    <id>http://physics-nya.github.io/2024/07/09/%E8%AE%A1%E7%AE%97%E4%B8%93%E9%A2%983%20%E5%87%B8%E9%80%8F%E9%95%9C%E7%9A%84%E4%BA%8C%E9%98%B6%E5%83%8F%E6%95%A3/</id>
+    <published>2024-07-09T10:31:27.000Z</published>
+    <updated>2024-07-29T07:45:51.369Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;计算专题3-凸透镜的二阶像散&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#计算专题3-凸透镜的二阶像散&quot;&gt;&lt;/a&gt; 计算专题3 凸透镜的二阶像散&lt;/h1&gt;
+&lt;h2 id=&quot;前言&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="计算专题" scheme="http://physics-nya.github.io/categories/%E8%AE%A1%E7%AE%97%E4%B8%93%E9%A2%98/"/>
+    
+    
+    <category term="Physics" scheme="http://physics-nya.github.io/tags/Physics/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>随笔2 暑假旅行记录</title>
+    <link href="http://physics-nya.github.io/2024/06/29/%E9%9A%8F%E7%AC%942%20%E6%9A%91%E5%81%87%E6%97%85%E8%A1%8C%E8%AE%B0%E5%BD%95/"/>
+    <id>http://physics-nya.github.io/2024/06/29/%E9%9A%8F%E7%AC%942%20%E6%9A%91%E5%81%87%E6%97%85%E8%A1%8C%E8%AE%B0%E5%BD%95/</id>
+    <published>2024-06-29T09:27:18.000Z</published>
+    <updated>2024-07-08T11:49:33.750Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;strong&gt;多图预警！&lt;/strong&gt;（为了提高页面的加载速度，大多数图片都以链接的形式挂在图床上，只保留少部分图片显示在页面中）&lt;/p&gt;
+&lt;h1 id=&quot;出发-629下午&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="life" scheme="http://physics-nya.github.io/categories/life/"/>
+    
+    
+    <category term="Life" scheme="http://physics-nya.github.io/tags/Life/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>课堂讲义</title>
+    <link href="http://physics-nya.github.io/2024/06/28/%E8%AF%BE%E5%A0%82%E8%AE%B2%E4%B9%89/"/>
+    <id>http://physics-nya.github.io/2024/06/28/%E8%AF%BE%E5%A0%82%E8%AE%B2%E4%B9%89/</id>
+    <published>2024-06-28T07:39:24.000Z</published>
+    <updated>2024-07-09T07:04:02.804Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;这是我暑假给新高一的学弟学妹们上课的一些讲义，放在这里作为记录.&lt;/p&gt;
+&lt;h1 id=&quot;第五章-质心-刚体&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#第五章-质心-刚体&quot;&gt;&lt;/a&gt; 第五章 质心 刚体&lt;/h1&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="Work" scheme="http://physics-nya.github.io/categories/Work/"/>
+    
+    
+    <category term="Physics" scheme="http://physics-nya.github.io/tags/Physics/"/>
+    
+    <category term="work" scheme="http://physics-nya.github.io/tags/work/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计算专题2 Joule-Thomson系数的计算与有关问题</title>
+    <link href="http://physics-nya.github.io/2024/06/18/%E8%AE%A1%E7%AE%97%E4%B8%93%E9%A2%982%20Joule-Thomson%E7%B3%BB%E6%95%B0%E7%9A%84%E8%AE%A1%E7%AE%97%E4%B8%8E%E6%9C%89%E5%85%B3%E9%97%AE%E9%A2%98/"/>
+    <id>http://physics-nya.github.io/2024/06/18/%E8%AE%A1%E7%AE%97%E4%B8%93%E9%A2%982%20Joule-Thomson%E7%B3%BB%E6%95%B0%E7%9A%84%E8%AE%A1%E7%AE%97%E4%B8%8E%E6%9C%89%E5%85%B3%E9%97%AE%E9%A2%98/</id>
+    <published>2024-06-18T14:19:56.000Z</published>
+    <updated>2024-06-21T15:52:48.367Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset=&#39;UTF-8&#39;&gt;&lt;meta name=&#39;viewport&#39; content=&#39;width=device-width initial-scale=1&#39;&gt;
+&lt;title&gt;计算专题2</summary>
+        
+      
+    
+    
+    
+    <category term="计算专题" scheme="http://physics-nya.github.io/categories/%E8%AE%A1%E7%AE%97%E4%B8%93%E9%A2%98/"/>
+    
+    
+    <category term="Physics" scheme="http://physics-nya.github.io/tags/Physics/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>随笔1 高考之后的一些感想</title>
+    <link href="http://physics-nya.github.io/2024/06/12/%E9%9A%8F%E7%AC%941%20%E9%AB%98%E8%80%83%E4%B9%8B%E5%90%8E%E7%9A%84%E4%B8%80%E4%BA%9B%E6%84%9F%E6%83%B3/"/>
+    <id>http://physics-nya.github.io/2024/06/12/%E9%9A%8F%E7%AC%941%20%E9%AB%98%E8%80%83%E4%B9%8B%E5%90%8E%E7%9A%84%E4%B8%80%E4%BA%9B%E6%84%9F%E6%83%B3/</id>
+    <published>2024-06-12T03:29:17.000Z</published>
+    <updated>2024-06-12T03:29:42.306Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;这三年总算是平稳地度过了，但是高考完之后还是会有很多思绪夹杂在一起，毕竟是自己第一次因为喜欢一件事情而为之付出如此多的时间和精力，而且有幸收获到了理想的结果. 或许我应该写下一些文字来记录一下这些感受.&lt;/p&gt;
+&lt;h1 id=&quot;episode-1&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="life" scheme="http://physics-nya.github.io/categories/life/"/>
+    
+    
+    <category term="Life" scheme="http://physics-nya.github.io/tags/Life/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计算专题1 拉格朗日点相关问题的一些计算</title>
+    <link href="http://physics-nya.github.io/2024/05/16/%E8%AE%A1%E7%AE%97%E4%B8%93%E9%A2%981%20%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E7%82%B9%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%A1%E7%AE%97/"/>
+    <id>http://physics-nya.github.io/2024/05/16/%E8%AE%A1%E7%AE%97%E4%B8%93%E9%A2%981%20%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E7%82%B9%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%A1%E7%AE%97/</id>
+    <published>2024-05-16T11:34:20.000Z</published>
+    <updated>2024-05-24T14:53:00.567Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset=&#39;UTF-8&#39;&gt;&lt;meta name=&#39;viewport&#39; content=&#39;width=device-width initial-scale=1&#39;&gt;
+&lt;title&gt;计算专题1</summary>
+        
+      
+    
+    
+    
+    <category term="计算专题" scheme="http://physics-nya.github.io/categories/%E8%AE%A1%E7%AE%97%E4%B8%93%E9%A2%98/"/>
+    
+    
+    <category term="Physics" scheme="http://physics-nya.github.io/tags/Physics/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>资源收集（持续更新）</title>
+    <link href="http://physics-nya.github.io/2024/05/08/resources/"/>
+    <id>http://physics-nya.github.io/2024/05/08/resources/</id>
+    <published>2024-05-08T14:01:32.000Z</published>
+    <updated>2024-08-04T02:43:16.487Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;这里用来记录一些常用的资源，以便于查找.&lt;/p&gt;
+&lt;h2 id=&quot;学习&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#学习&quot;&gt;&lt;/a&gt; 学习&lt;/h2&gt;
+&lt;h3 id=&quot;论坛&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="life" scheme="http://physics-nya.github.io/categories/life/"/>
+    
+    
+    <category term="Life" scheme="http://physics-nya.github.io/tags/Life/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Notes on Mathematical Methods for Physicists Chapter3</title>
+    <link href="http://physics-nya.github.io/2024/04/27/Notes%20on%20Mathematical%20Methods%20for%20Physicists%20%C2%A73/"/>
+    <id>http://physics-nya.github.io/2024/04/27/Notes%20on%20Mathematical%20Methods%20for%20Physicists%20%C2%A73/</id>
+    <published>2024-04-27T13:31:00.000Z</published>
+    <updated>2024-08-05T14:49:48.830Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&amp;lt;!doctype html&amp;gt;&lt;/p&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset=&#39;UTF-8&#39;&gt;&lt;meta name=&#39;viewport&#39; content=&#39;width=device-width</summary>
+        
+      
+    
+    
+    
+    <category term="Notes on Mathematical Methods for Physicists" scheme="http://physics-nya.github.io/categories/Notes-on-Mathematical-Methods-for-Physicists/"/>
+    
+    
+    <category term="Physics" scheme="http://physics-nya.github.io/tags/Physics/"/>
+    
+    <category term="math" scheme="http://physics-nya.github.io/tags/math/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Notes on Mathematical Methods for Physicists Appendix1</title>
+    <link href="http://physics-nya.github.io/2024/04/09/Notes%20on%20Mathematical%20Methods%20for%20Physicists%20Appendix%201/"/>
+    <id>http://physics-nya.github.io/2024/04/09/Notes%20on%20Mathematical%20Methods%20for%20Physicists%20Appendix%201/</id>
+    <published>2024-04-09T14:53:00.000Z</published>
+    <updated>2024-08-06T10:12:52.888Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset=&#39;UTF-8&#39;&gt;&lt;meta name=&#39;viewport&#39; content=&#39;width=device-width initial-scale=1&#39;&gt;
+&lt;title&gt;Notes on Mathematical</summary>
+        
+      
+    
+    
+    
+    <category term="Notes on Mathematical Methods for Physicists" scheme="http://physics-nya.github.io/categories/Notes-on-Mathematical-Methods-for-Physicists/"/>
+    
+    
+    <category term="language learning" scheme="http://physics-nya.github.io/tags/language-learning/"/>
+    
+    <category term="Physics" scheme="http://physics-nya.github.io/tags/Physics/"/>
+    
+    <category term="math" scheme="http://physics-nya.github.io/tags/math/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Notes on Mathematical Methods for Physicists Chapter2</title>
+    <link href="http://physics-nya.github.io/2024/04/09/Notes%20on%20Mathematical%20Methods%20for%20Physicists%20%C2%A72/"/>
+    <id>http://physics-nya.github.io/2024/04/09/Notes%20on%20Mathematical%20Methods%20for%20Physicists%20%C2%A72/</id>
+    <published>2024-04-09T14:52:00.000Z</published>
+    <updated>2024-05-22T15:21:12.268Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset=&#39;UTF-8&#39;&gt;&lt;meta name=&#39;viewport&#39; content=&#39;width=device-width initial-scale=1&#39;&gt;
+&lt;title&gt;Notes on Mathematical</summary>
+        
+      
+    
+    
+    
+    <category term="Notes on Mathematical Methods for Physicists" scheme="http://physics-nya.github.io/categories/Notes-on-Mathematical-Methods-for-Physicists/"/>
+    
+    
+    <category term="Physics" scheme="http://physics-nya.github.io/tags/Physics/"/>
+    
+    <category term="math" scheme="http://physics-nya.github.io/tags/math/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微分几何入门与广义相对论 附录A</title>
+    <link href="http://physics-nya.github.io/2024/04/08/%E5%BE%AE%E5%88%86%E5%87%A0%E4%BD%95%E5%85%A5%E9%97%A8%E4%B8%8E%E5%B9%BF%E4%B9%89%E7%9B%B8%E5%AF%B9%E8%AE%BA%20%E9%99%84%E5%BD%95A/"/>
+    <id>http://physics-nya.github.io/2024/04/08/%E5%BE%AE%E5%88%86%E5%87%A0%E4%BD%95%E5%85%A5%E9%97%A8%E4%B8%8E%E5%B9%BF%E4%B9%89%E7%9B%B8%E5%AF%B9%E8%AE%BA%20%E9%99%84%E5%BD%95A/</id>
+    <published>2024-04-08T12:40:45.000Z</published>
+    <updated>2024-05-22T15:22:09.004Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset=&#39;UTF-8&#39;&gt;&lt;meta name=&#39;viewport&#39; content=&#39;width=device-width initial-scale=1&#39;&gt;
+&lt;title&gt;微分几何入门与广义相对论</summary>
+        
+      
+    
+    
+    
+    <category term="笔记：微分几何入门与广义相对论" scheme="http://physics-nya.github.io/categories/%E7%AC%94%E8%AE%B0%EF%BC%9A%E5%BE%AE%E5%88%86%E5%87%A0%E4%BD%95%E5%85%A5%E9%97%A8%E4%B8%8E%E5%B9%BF%E4%B9%89%E7%9B%B8%E5%AF%B9%E8%AE%BA/"/>
+    
+    
+    <category term="Physics" scheme="http://physics-nya.github.io/tags/Physics/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微分几何入门与广义相对论 Chapter1</title>
+    <link href="http://physics-nya.github.io/2024/04/08/%E5%BE%AE%E5%88%86%E5%87%A0%E4%BD%95%E5%85%A5%E9%97%A8%E4%B8%8E%E5%B9%BF%E4%B9%89%E7%9B%B8%E5%AF%B9%E8%AE%BA%20Chapter1/"/>
+    <id>http://physics-nya.github.io/2024/04/08/%E5%BE%AE%E5%88%86%E5%87%A0%E4%BD%95%E5%85%A5%E9%97%A8%E4%B8%8E%E5%B9%BF%E4%B9%89%E7%9B%B8%E5%AF%B9%E8%AE%BA%20Chapter1/</id>
+    <published>2024-04-08T12:40:45.000Z</published>
+    <updated>2024-05-22T15:21:47.071Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset=&#39;UTF-8&#39;&gt;&lt;meta name=&#39;viewport&#39; content=&#39;width=device-width initial-scale=1&#39;&gt;
+&lt;title&gt;微分几何入门与广义相对论</summary>
+        
+      
+    
+    
+    
+    <category term="笔记：微分几何入门与广义相对论" scheme="http://physics-nya.github.io/categories/%E7%AC%94%E8%AE%B0%EF%BC%9A%E5%BE%AE%E5%88%86%E5%87%A0%E4%BD%95%E5%85%A5%E9%97%A8%E4%B8%8E%E5%B9%BF%E4%B9%89%E7%9B%B8%E5%AF%B9%E8%AE%BA/"/>
+    
+    
+    <category term="Physics" scheme="http://physics-nya.github.io/tags/Physics/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微分几何入门与广义相对论 Chapter2</title>
+    <link href="http://physics-nya.github.io/2024/04/08/%E5%BE%AE%E5%88%86%E5%87%A0%E4%BD%95%E5%85%A5%E9%97%A8%E4%B8%8E%E5%B9%BF%E4%B9%89%E7%9B%B8%E5%AF%B9%E8%AE%BA%20Chapter2/"/>
+    <id>http://physics-nya.github.io/2024/04/08/%E5%BE%AE%E5%88%86%E5%87%A0%E4%BD%95%E5%85%A5%E9%97%A8%E4%B8%8E%E5%B9%BF%E4%B9%89%E7%9B%B8%E5%AF%B9%E8%AE%BA%20Chapter2/</id>
+    <published>2024-04-08T12:40:45.000Z</published>
+    <updated>2024-06-26T12:47:55.738Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset=&#39;UTF-8&#39;&gt;&lt;meta name=&#39;viewport&#39; content=&#39;width=device-width initial-scale=1&#39;&gt;
+&lt;title&gt;微分几何入门与广义相对论</summary>
+        
+      
+    
+    
+    
+    <category term="笔记：微分几何入门与广义相对论" scheme="http://physics-nya.github.io/categories/%E7%AC%94%E8%AE%B0%EF%BC%9A%E5%BE%AE%E5%88%86%E5%87%A0%E4%BD%95%E5%85%A5%E9%97%A8%E4%B8%8E%E5%B9%BF%E4%B9%89%E7%9B%B8%E5%AF%B9%E8%AE%BA/"/>
+    
+    
+    <category term="Physics" scheme="http://physics-nya.github.io/tags/Physics/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Notes on Mathematical Methods for Physicists Chapter1</title>
+    <link href="http://physics-nya.github.io/2024/03/26/Notes%20on%20Mathematical%20Methods%20for%20Physicists%20%C2%A71/"/>
+    <id>http://physics-nya.github.io/2024/03/26/Notes%20on%20Mathematical%20Methods%20for%20Physicists%20%C2%A71/</id>
+    <published>2024-03-26T13:33:00.000Z</published>
+    <updated>2024-05-22T15:21:01.485Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset=&#39;UTF-8&#39;&gt;&lt;meta name=&#39;viewport&#39; content=&#39;width=device-width initial-scale=1&#39;&gt;
+&lt;title&gt;Notes on Mathematical</summary>
+        
+      
+    
+    
+    
+    <category term="Notes on Mathematical Methods for Physicists" scheme="http://physics-nya.github.io/categories/Notes-on-Mathematical-Methods-for-Physicists/"/>
+    
+    
+    <category term="Physics" scheme="http://physics-nya.github.io/tags/Physics/"/>
+    
+    <category term="math" scheme="http://physics-nya.github.io/tags/math/"/>
+    
+  </entry>
+  
+</feed>
