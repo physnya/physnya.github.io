@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://physnya.top/timeline/</loc>
+    <loc>https://physnya.top/todo/</loc>
     
     <lastmod>2024-10-01</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://physnya.top/todo/</loc>
+    <loc>https://physnya.top/timeline/</loc>
     
     <lastmod>2024-10-01</lastmod>
     
@@ -351,13 +351,6 @@
   </url>
   
   <url>
-    <loc>https://physnya.top/tags/Life/</loc>
-    <lastmod>2024-10-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://physnya.top/tags/language-learning/</loc>
     <lastmod>2024-10-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -366,6 +359,13 @@
   
   <url>
     <loc>https://physnya.top/tags/math/</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://physnya.top/tags/Life/</loc>
     <lastmod>2024-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -388,14 +388,14 @@
   </url>
   
   <url>
-    <loc>https://physnya.top/categories/about-my-blog/</loc>
+    <loc>https://physnya.top/categories/Notes-on-Mathematical-Methods-for-Physicists/</loc>
     <lastmod>2024-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://physnya.top/categories/Notes-on-Mathematical-Methods-for-Physicists/</loc>
+    <loc>https://physnya.top/categories/about-my-blog/</loc>
     <lastmod>2024-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
