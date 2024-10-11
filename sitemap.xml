@@ -378,7 +378,7 @@
   </url>
   
   <url>
-    <loc>https://physnya.top/tags/Life/</loc>
+    <loc>https://physnya.top/tags/language-learning/</loc>
     <lastmod>2024-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -392,7 +392,7 @@
   </url>
   
   <url>
-    <loc>https://physnya.top/tags/language-learning/</loc>
+    <loc>https://physnya.top/tags/Life/</loc>
     <lastmod>2024-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -415,6 +415,13 @@
   </url>
   
   <url>
+    <loc>https://physnya.top/categories/Notes-on-Mathematical-Methods-for-Physicists/</loc>
+    <lastmod>2024-10-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://physnya.top/categories/about-my-blog/</loc>
     <lastmod>2024-10-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -430,13 +437,6 @@
   
   <url>
     <loc>https://physnya.top/categories/%E6%B5%81%E6%B0%B4%E8%B4%A6/</loc>
-    <lastmod>2024-10-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://physnya.top/categories/Notes-on-Mathematical-Methods-for-Physicists/</loc>
     <lastmod>2024-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
