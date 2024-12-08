@@ -1,0 +1,1 @@
+0===window.scrollY&&setTimeout(function(){window.scrollTo({top:window.scrollY+350,behavior:"smooth"})},750);
