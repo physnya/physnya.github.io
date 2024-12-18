@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){for(var t=document.getElementsByTagName("a"),e=0;e<t.length;e++)"https://www.travellings.cn/go.html"===t[e].href&&(t[e].target="_blank")});
